@@ -2,20 +2,20 @@
 __author__ = "730409415"
 
 
-from operator import index
-
-
 first_word: str = input("Enter a 5-character word: ")
-if len(first_word) > 5 : 
+if len(first_word) > 5: 
     print("Error: Word must contain 5 characters ")
     exit()
 
-if len(first_word) < 5 : 
+if len(first_word) < 5: 
     print("Error: Word must contain 5 characters ")
     exit()
 
 first_character: str = input("Enter a single character: ")
-if len(first_character) > 1 : 
+if len(first_character) > 1: 
+    print("Error: Character must be a single character. ")
+    exit()
+if len(first_character) < 1:
     print("Error: Character must be a single character. ")
     exit()
 
