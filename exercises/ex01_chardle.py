@@ -23,6 +23,9 @@ char_count: str = (sum(char == first_character for char in first_word))
 
 print("Searching for " + first_character + " in " + first_word) 
 
+def stringify(num: int) -> str: 
+    return str(num)
+
 if first_character == first_word[0]:
     print(first_character + " found at index 0 ")
 
