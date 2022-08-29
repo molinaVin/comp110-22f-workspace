@@ -6,15 +6,15 @@ __author__= "730409415"
 first_word: str = input("Enter a 5-character word: ")
 if len(first_word) > 5 : 
     print( "Error: Word must contain 5 characters ")
-    exit()
+    raise SystemExit()
 if len(first_word) < 5 : 
     print ("Error: Word must contain 5 characters ")
-    exit()
+    raise SystemExit(1)
 
 first_character: str = input("Enter a single character: ")
 if len(first_character) > 1 : 
     print ("Error: Character must be a single character. ")
-    exit()
+    raise SystemExit(2)
 
 char_count: str = (sum(char == first_character for char in first_word))
 
