@@ -40,20 +40,20 @@ if first_character == first_word[4]:
     print(first_character + " found at index 4 ")
 
 
-if char_count == (0):
+if char_count == (0.0):
     print(" No instances of " + first_character + " found in " + first_word) 
 
-if char_count == (1): 
+if char_count == (1.0): 
     print(" 1 instance of " + first_character + " found in " + first_word)
 
-if char_count == (2): 
+if char_count == (2.0): 
     print(" 2 instances of " + first_character + " found in " + first_word) 
    
-if char_count == (3): 
+if char_count == (3.0): 
     print(" 3 instances of " + first_character + " found in " + first_word)
 
-if char_count == (4): 
+if char_count == (4.0): 
     print(" 4 instances of " + first_character + " found in " + first_word)
 
-if char_count == (5): 
+if char_count == (5.0): 
     print(" 5 instances of " + first_character + " found in " + first_word)
