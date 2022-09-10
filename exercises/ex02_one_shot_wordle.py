@@ -26,7 +26,7 @@ while i < len(secret_word):
         correct_count += 1
     else: 
         results.append(YELLOW_BOX)
-    i+= 1
+    i += 1
 
 print("".join(results))
 if correct_count == len(secret_word): 
