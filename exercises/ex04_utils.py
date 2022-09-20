@@ -1,30 +1,41 @@
 """EX04_utils!!!"""
 __author__ = "730409415"
 
-from random import input  #this may not do anything, but doesn't look like im able to input some values)
 
-a_list: list[int] = list()
-def all(input:list[int], int) -> bool:
-    if list[int] == int():
+def all(int_list:list, single_int) -> bool:
+    """This fucntion compares a list of int's and single int and returns True if the single int is found within the list, otherwise returns False."""
+    i: int = 0 
+    results: int = 0
+    while i < len(int_list):
+        if int_list[i] == single_int:
+            results += 1
+        i += 1
+    if int_list and results == len(int_list):
         return True 
     else: 
         return False
 
 
-def max(input:list[int]) -> int: 
-    if len(input)==0:
-        raise ValueError("max() arg is an empty List")
+def max(int_list: list) -> int: 
+    """This function sorts a list of int's from lowest to highest value and then returns the last index in the list."""
+    if int_list:
+        int_list_sorted: list = sorted(int_list)
+        return int_list_sorted[len(int_list)-1]
     else:
-        return max()
+        raise ValueError("max() arg is an empty List")
 
 
-list_one: input(int) 
-list_two: input(int)
-#do individual parameters need to be defined first? doesnt look like it is considering it as a variable below...)
-def is_equal(list_one, list_two) -> int:
-    if list_one == list_two:
+def is_equal(int_list: list, int_list_two: list) -> bool:
+    """This fucntion compares two list to see if they're identical by comparing each index and seeing if they are the same. If so, return True, else, return False. """
+    i: int = 0 
+    results: int = 0 
+    while i < len(int_list): 
+        if int_list[i] == int_list_two[i]: 
+            results += 1
+        i += 1 
+    if results == len(int_list): 
         return True 
     else: 
         return False
 
-#does this code need a condition to ensure it isnt infinte? probably.. not sure where though? i = ? 
+
