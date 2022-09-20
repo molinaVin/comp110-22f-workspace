@@ -39,3 +39,6 @@ def is_equal(int_list: list, int_list_two: list) -> bool:
         return False
 
 
+print(all([1, 1, 1, 1], 13))
+print(max([100, 99, 98]))
+print(is_equal([1, 0, 1], [1, 0, 1]))
